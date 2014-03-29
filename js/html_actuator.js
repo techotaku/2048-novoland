@@ -66,6 +66,7 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   var wrapper   = document.createElement("div");
   var inner     = document.createElement("div");
+  var innerBg   = document.createElement("div");
   var position  = tile.previousPosition || { x: tile.x, y: tile.y };
   var positionClass = this.positionClass(position);
 
@@ -78,7 +79,12 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   inner.classList.add("tile-inner");
   inner.textContent = "";
-  if (tile.value <= 2048) inner.title = titleMsgs[getNumber(tile.value) - 1];
+  if (tile.value <= 2048)
+  { 
+    inner.title = titleMsgs[getNumber(tile.value) - 1];
+    innerBg.classList.add("sprite");
+    innerBg.classList.add("sprite-" + tile.value);
+  }
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
@@ -101,6 +107,7 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   // Add the inner part of the tile to the wrapper
   wrapper.appendChild(inner);
+  inner.appendChild(innerBg);
 
   // Put the tile on the board
   this.tileContainer.appendChild(wrapper);

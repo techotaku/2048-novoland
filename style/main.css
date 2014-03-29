@@ -318,57 +318,46 @@ hr {
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #eee4da url(../image/2.jpg) no-repeat center;
-    background-size: 92% auto;
+    background: #eee4da;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8 url(../image/4.jpg) no-repeat center;
-    background-size: 92% auto;
+    background: #ede0c8;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
     color: #f9f6f2;
-    background: #f2b179 url(../image/8.jpg) no-repeat center;
-    background-size: 92% auto;
+    background: #f2b179;
   }
   .tile.tile-16 .tile-inner {
     color: #f9f6f2;
-    background: #f59563 url(../image/16.jpg) no-repeat center;
-    background-size: 92% auto;
+    background: #f59563;
   }
   .tile.tile-32 .tile-inner {
     color: #f9f6f2;
-    background: #f67c5f url(../image/32.jpg) no-repeat center;
-    background-size: 92% auto;
+    background: #f67c5f;
   }
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
-    background: #f65e3b url(../image/64.jpg) no-repeat center;
-    background-size: 92% auto;
+    background: #f65e3b;
   }
   .tile.tile-128 .tile-inner {
     color: #f9f6f2;
-    background: #edcf72 url(../image/128.jpg) no-repeat center;
-    background-size: 92% auto;
+    background: #edcf72;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286); }
   .tile.tile-256 .tile-inner {
     color: #f9f6f2;
-    background: #edcc61 url(../image/256.jpg) no-repeat center;
-    background-size: 92% auto;
+    background: #edcc61;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048); }
   .tile.tile-512 .tile-inner {
     color: #f9f6f2;
-    background: #edc850 url(../image/512.jpg) no-repeat center;
-    background-size: 92% auto;
+    background: #edc850;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
   .tile.tile-1024 .tile-inner {
     color: #f9f6f2;
-    background: #edc53f url(../image/1024.jpg) no-repeat center;
-    background-size: 92% auto;
+    background: #edc53f;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
   .tile.tile-2048 .tile-inner {
     color: #f9f6f2;
-    background: #edc22e url(../image/2048.jpg) no-repeat center;
-    background-size: 92% auto;
+    background: #edc22e;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
@@ -494,6 +483,19 @@ hr {
   .sharing > iframe, .sharing > span, .sharing > form {
     display: inline-block;
     vertical-align: middle; }
+
+.sprite {background: url(tiles.jpg) no-repeat; position: absolute; top: 3px; left: 3px; }
+.sprite-1024 { background-position: 0 0; width: 100px; height: 100px;} 
+.sprite-128 { background-position: 0 -105px; width: 100px; height: 100px; } 
+.sprite-16 { background-position: 0 -210px; width: 100px; height: 53px; } 
+.sprite-2 { background-position: 0 -268px; width: 100px; height: 100px;} 
+.sprite-2048 { background-position: 0 -373px; width: 100px; height: 100px; } 
+.sprite-256 { background-position: 0 -478px; width: 100px; height: 100px; } 
+.sprite-32 { background-position: 0 -583px; width: 100px; height: 100px; } 
+.sprite-4 { background-position: 0 -688px; width: 100px; height: 100px; } 
+.sprite-512 { background-position: 0 -793px; width: 100px; height: 100px; } 
+.sprite-64 { background-position: 0 -898px; width: 100px; height: 100px; } 
+.sprite-8{ background-position: 0 -1003px; width: 100px; height: 100px; } 
 
 @media screen and (max-width: 520px) {
   html, body {
@@ -696,7 +698,22 @@ hr {
   .sharing > iframe, .sharing > span, .sharing > form {
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+.sprite {background: url(tiles.jpg) no-repeat; position: absolute; top: 3px; left: 3px; }
+.sprite-1024 { background-position: 0 0; width: 100px; height: 100px;} 
+.sprite-128 { background-position: 0 -105px; width: 100px; height: 100px; } 
+.sprite-16 { background-position: 0 -210px; width: 100px; height: 53px; } 
+.sprite-2 { background-position: 0 -268px; width: 100px; height: 100px;} 
+.sprite-2048 { background-position: 0 -373px; width: 100px; height: 100px; } 
+.sprite-256 { background-position: 0 -478px; width: 100px; height: 100px; } 
+.sprite-32 { background-position: 0 -583px; width: 100px; height: 100px; } 
+.sprite-4 { background-position: 0 -688px; width: 100px; height: 100px; } 
+.sprite-512 { background-position: 0 -793px; width: 100px; height: 100px; } 
+.sprite-64 { background-position: 0 -898px; width: 100px; height: 100px; } 
+.sprite-8{ background-position: 0 -1003px; width: 100px; height: 100px; } 
+}
+
 .pp-donate button {
   -webkit-appearance: none;
   -moz-appearance: none;
