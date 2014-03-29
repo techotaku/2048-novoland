@@ -487,7 +487,7 @@ hr {
 .sprite {background: url(tiles.jpg) no-repeat; position: absolute; top: 3px; left: 3px; }
 .sprite-1024 { background-position: 0 0; width: 100px; height: 100px;} 
 .sprite-128 { background-position: 0 -105px; width: 100px; height: 100px; } 
-.sprite-16 { background-position: 0 -210px; width: 100px; height: 53px; } 
+.sprite-16 { background-position: 0 -210px; width: 100px; height: 53px; top: 27px;} 
 .sprite-2 { background-position: 0 -268px; width: 100px; height: 100px;} 
 .sprite-2048 { background-position: 0 -373px; width: 100px; height: 100px; } 
 .sprite-256 { background-position: 0 -478px; width: 100px; height: 100px; } 
@@ -700,18 +700,18 @@ hr {
     margin: 0 auto;
     margin-bottom: 20px; }
 
-.sprite {background: url(tiles.jpg) no-repeat; position: absolute; top: 3px; left: 3px; }
-.sprite-1024 { background-position: 0 0; width: 100px; height: 100px;} 
-.sprite-128 { background-position: 0 -105px; width: 100px; height: 100px; } 
-.sprite-16 { background-position: 0 -210px; width: 100px; height: 53px; } 
-.sprite-2 { background-position: 0 -268px; width: 100px; height: 100px;} 
-.sprite-2048 { background-position: 0 -373px; width: 100px; height: 100px; } 
-.sprite-256 { background-position: 0 -478px; width: 100px; height: 100px; } 
-.sprite-32 { background-position: 0 -583px; width: 100px; height: 100px; } 
-.sprite-4 { background-position: 0 -688px; width: 100px; height: 100px; } 
-.sprite-512 { background-position: 0 -793px; width: 100px; height: 100px; } 
-.sprite-64 { background-position: 0 -898px; width: 100px; height: 100px; } 
-.sprite-8{ background-position: 0 -1003px; width: 100px; height: 100px; } 
+.sprite {background: url(tiles-520.jpg) no-repeat; position: absolute; top: 4px; left: 4px; }
+.sprite-1024{ background-position: 0 0; width: 50px; height: 50px; } 
+.sprite-128{ background-position: 0 -55px; width: 50px; height: 50px; } 
+.sprite-16{ background-position: 0 -110px; width: 50px; height: 27px; top: 15px; } 
+.sprite-2{ background-position: 0 -142px; width: 50px; height: 50px; } 
+.sprite-2048{ background-position: 0 -197px; width: 50px; height: 50px; } 
+.sprite-256{ background-position: 0 -252px; width: 50px; height: 50px; } 
+.sprite-32{ background-position: 0 -307px; width: 50px; height: 50px; } 
+.sprite-4{ background-position: 0 -362px; width: 50px; height: 50px; } 
+.sprite-512{ background-position: 0 -417px; width: 50px; height: 50px; } 
+.sprite-64{ background-position: 0 -472px; width: 50px; height: 50px; } 
+.sprite-8{ background-position: 0 -527px; width: 50px; height: 50px; } 
 }
 
 .pp-donate button {
